@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e
+dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+rm -f "$dir"/RedStarOSInternational-Repo.db \
+      "$dir"/RedStarOSInternational-Repo.files
+
+repo-add "$dir/RedStarOSInternational-Repo.db.tar.gz" "$dir"/*tar.zst
+
+mv "$dir/RedStarOSInternational-Repo.db.tar.gz" "$dir/RedStarOSInternational-Repo.db"
+mv "$dir/RedStarOSInternational-Repo.files.tar.gz" "$dir/RedStarOSInternational-Repo.files"
