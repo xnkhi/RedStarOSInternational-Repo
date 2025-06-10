@@ -1,7 +1,0 @@
-#!/bin/bash
-
-repo-add RedStarOSInternationalRepo.db.tar.gz x86_64/*
-rm RedStarOSInternational-Repo.db
-rm RedStarOSInternational-Repo.files
-mv RedStarOSInternational-Repo.db.tar.zst RedStarOSInternational-Repo.db
-mv RedStarOSInternational-Repo.files.tar.zst RedStarOSInternational-Repo.files
